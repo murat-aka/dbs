@@ -1,0 +1,32 @@
+ <div class="container newdatabase" id="database_form"style="display: none">
+  <h2>Form control: Create Database</h2>
+  <p>The form below contains two input elements; one of type text and one of type password:</p>
+  <form role="form" autocomplete="off" id="login">
+    <div class="form-group">
+      <label for="usr">Database Name:</label>
+      <input type="text" class="form-control" id="usr" value="" autocomplete="off" />
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" value="" autocomplete="off" />
+    </div>
+    <button type="button" class="btn btn-warning" onclick= "ajaxing()" >Submit</button>
+    <button type="button" class="btn btn-danger" onclick="$('.newdatabase').hide();" >Cancel</button>
+    
+    <div class="container">
+  <h2>Information Panel</h2>
+  <div class="panel-group">
+   
+    <div class="panel panel-warning">
+      <div class="panel-heading">Orange Button Info</div>
+      <div class="panel-body">Click on Submit to Create new Database</div>
+    </div>
+
+    <div class="panel panel-danger">
+      <div class="panel-heading">Red Button Info</div>
+      <div class="panel-body">Click on Cancel to hide the form</div>
+    </div>
+  </div>
+</div>
+  </form>
+</div>

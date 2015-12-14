@@ -1,0 +1,93 @@
+ <div class="container newclient bg-warning" id="database_form"style="display: none">
+  <h2>Form control: Create Client</h2>
+  </br>
+  
+  
+<!-- details of the client-->  
+
+  <form role="form" autocomplete="off" id="login">
+    <div class="form-inline">
+        
+      <label for="title">Titlexxxxxxx:</label>
+      <input type="text" class="form-control" id="title" value="" autocomplete="off" />
+            
+      <label for="firstname">Firstname:</label>
+      <input type="text" class="form-control" id="firstname" value="" autocomplete="off" />
+     
+      <label for="surname">Surname:</label>
+      <input type="text" class="form-control" id="surname" value="" autocomplete="off" />
+    </div>
+    
+    
+    </br>
+ 
+<!-- address of the client--> 
+    
+    <div class="form-inline">
+      <label for="organisation">Organisation:</label>
+      <input type="text" class="form-control" id="organisation" value="" autocomplete="off" />
+      
+      <label for="address">Addressx:</label>
+      <input type="text" class="form-control" id="address" value="" autocomplete="off" />
+      
+      <label for="town">Townxxx:</label>
+      <input type="text" class="form-control" id="town" value="" autocomplete="off" />
+      
+      <label for="postcode">Postcode:</label>
+      <input type="text" class="form-control" id="postcode" value="" autocomplete="off" />
+      
+    </div>
+    
+    </br>
+    
+<!-- contact of the client-->  
+
+ 
+    <div class="form-inline">
+        
+      <label for="tel">Telxxxxxxxx:</label>
+      <input type="text" class="form-control" id="tel" value="" autocomplete="off" />
+            
+      <label for="fax">Faxxxxxxx:</label>
+      <input type="text" class="form-control" id="fax" value="" autocomplete="off" />
+     
+      <label for="email">Emailxxx:</label>
+      <input type="text" class="form-control" id="email" value="" autocomplete="off" />
+    </div>
+    
+    </br>
+
+<!-- comments-->   
+    <div class="form-group">
+       <label for="comment">Comment:</label>
+       <textarea class="form-control" rows="5" id="comment"></textarea>
+   </div>
+
+    </br>
+    
+<!-- submission buttons-->  
+    <button type="button" class="btn btn-warning" onclick= "clientAjax()" >Submit</button>
+    <button type="button" class="btn btn-info" onclick= "clearNewClient()" >Clear</button>
+    <button type="button" class="btn btn-danger" onclick="$('.newclient').hide();" >Cancel</button>
+    
+    
+    
+<!-- information panels-->
+
+    <div class="container">
+  <h2>Information Panel</h2>
+  <div class="panel-group">
+   
+    <div class="panel panel-warning">
+      <div class="panel-heading">Orange Button Info</div>
+      <div class="panel-body">Click on Submit to Create new Client</div>
+    </div>
+
+    <div class="panel panel-danger">
+      <div class="panel-heading">Red Button Info</div>
+      <div class="panel-body">Click on Cancel to hide the form</div>
+    </div>
+  </div>
+</div>
+  </form>
+</div>

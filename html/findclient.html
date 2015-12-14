@@ -1,0 +1,101 @@
+ <div class="container findclient bg-info" id="database_form"style="display: none">
+  <h2>Form control: Find Client</h2>
+  </br>
+  
+  
+<!-- details of the client-->  
+
+  <form role="form" autocomplete="off" id="find">
+    <div class="form-inline">
+        
+      <label for="title_find">Titlexxxxxxx:</label>
+      <input type="text" class="form-control" id="title_find" value="" autocomplete="off" />
+            
+      <label for="firstname_find">Firstname:</label>
+      <input type="text" class="form-control" id="firstname_find" value="" autocomplete="off" />
+     
+      <label for="surname_find">Surname:</label>
+      <input type="text" class="form-control" id="surname_find" value="" autocomplete="off" />
+    </div>
+    
+    
+    </br>
+ 
+<!-- address of the client--> 
+    
+    <div class="form-inline">
+      <label for="organisation_find">Organisation:</label>
+      <input type="text" class="form-control" id="organisation_find" value="" autocomplete="off" />
+      
+      <label for="address_find">Addressx:</label>
+      <input type="text" class="form-control" id="address_find" value="" autocomplete="off" />
+      
+      <label for="town_find">Townxxx:</label>
+      <input type="text" class="form-control" id="town_find" value="" autocomplete="off" />
+      
+      <label for="postcode_find">Postcode:</label>
+      <input type="text" class="form-control" id="postcode_find" value="" autocomplete="off" />
+      
+    </div>
+    
+    </br>
+    
+<!-- contact of the client-->  
+
+ 
+    <div class="form-inline">
+        
+      <label for="tel_find">Telxxxxxxxx:</label>
+      <input type="text" class="form-control" id="tel_find" value="" autocomplete="off" />
+            
+      <label for="fax_find">Faxxxxxxx:</label>
+      <input type="text" class="form-control" id="fax_find" value="" autocomplete="off" />
+     
+      <label for="email_find">Emailxxx:</label>
+      <input type="text" class="form-control" id="email_find" value="" autocomplete="off" />
+    </div>
+    
+    </br>
+
+<!-- comments-->   
+    <div class="form-group">
+       <label for="comment_find">Comment:</label>
+       <textarea class="form-control" rows="5" id="comment_find"></textarea>
+   </div>
+
+    </br>
+    
+<!-- submission buttons-->  
+    <button type="button" class="btn btn-info" onclick= "searchAjax()" >Search</button>
+    <button type="button" class="btn btn-warning" onclick= "clearClient()" >Clear</button>
+    <button type="button" class="btn btn-danger" onclick="$('.findclient').hide();" >Cancel</button>
+    
+    
+    
+<!-- information panels-->
+
+    <div class="container">
+  <h2>Information Panel</h2>
+  <div class="panel-group">
+   
+    <div class="panel panel-warning">
+      <div class="panel-heading">Orange Button Info</div>
+      <div class="panel-body">Click on Search to find a Client</div>
+    </div>
+
+    <div class="panel panel-danger">
+      <div class="panel-heading">Red Button Info</div>
+      <div class="panel-body">Click on Cancel to hide the form</div>
+    </div>
+  </div>
+</div>
+  </form>
+  
+
+<!-- found users -->
+
+ 
+<div id="users-contain" class="ui-widget">
+  
+
+</div>
